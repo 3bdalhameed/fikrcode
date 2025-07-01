@@ -1,4 +1,6 @@
 import { Rocket, Code2, MonitorSmartphone, Sparkles, Settings } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
+
 
 function App() {
   return (
@@ -77,21 +79,52 @@ function App() {
         </p>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-        <p>&copy; {new Date().getFullYear()} FikrCode. All rights reserved.</p>
-        <p className="mt-1">
-          🌐{" "}
-          <a
-            href="https://fikrcode.online"
-            className="text-indigo-400 hover:underline transition"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            fikrcode.online
-          </a>
-        </p>
-      </footer>
+{/* Footer */}
+<footer className="border-t border-gray-800 pt-10 text-center text-sm text-gray-500">
+  <p className="mb-4">&copy; {new Date().getFullYear()} FikrCode. All rights reserved.</p>
+
+  <div className="flex justify-center gap-8 mb-4 text-indigo-400">
+    <a
+      href="https://www.instagram.com/fikr.code/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 hover:text-indigo-300 transition"
+    >
+      <Instagram className="w-4 h-4" />
+      Instagram
+    </a>
+    <a
+      href="https://www.linkedin.com/company/107742319"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 hover:text-indigo-300 transition"
+    >
+      <Linkedin className="w-4 h-4" />
+      LinkedIn
+    </a>
+    <a
+      href="mailto:fikrcode@outlook.com"
+      className="flex items-center gap-2 hover:text-indigo-300 transition"
+    >
+      <Mail className="w-4 h-4" />
+      Email Us
+    </a>
+  </div>
+
+  <p className="mb-2">
+    🌐{" "}
+    <a
+      href="https://fikrcode.online"
+      className="text-indigo-400 hover:underline transition"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      fikrcode.online
+    </a>
+  </p>
+</footer>
+
+
     </div>
   );
 }
